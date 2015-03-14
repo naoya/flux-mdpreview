@@ -44,7 +44,7 @@ var App = React.createClass({displayName: "App",
       React.createElement("div", null, 
         React.createElement("h1", null, "Hello, React"), 
         React.createElement("textarea", {onChange: this.onChangeText}), 
-        React.createElement(Content, {text: this.state.message})
+        React.createElement(Content, {markdown: this.state.message})
       )
     );
   }
@@ -52,10 +52,10 @@ var App = React.createClass({displayName: "App",
 
 var Content = React.createClass({displayName: "Content",
   propTypes: {
-    text: React.PropTypes.string
+    markdown: React.PropTypes.string
   },
   render: function() {
-    var html = markdown.toHTML(this.props.text);
+    var html = markdown.toHTML(this.props.markdown);
     return (
       React.createElement("div", {dangerouslySetInnerHTML: {__html:html}})
     );
