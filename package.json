@@ -1,0 +1,19 @@
+{
+  "name": "mdpreview-flux",
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "naoya",
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "fluxxor": "^1.5.2",
+    "gulp": "^3.8.11",
+    "gulp-util": "^3.0.4",
+    "markdown": "^0.5.0",
+    "react": "^0.12.0",
+    "reactify": "^1.1.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
